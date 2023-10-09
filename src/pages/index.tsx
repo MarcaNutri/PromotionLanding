@@ -1,6 +1,8 @@
 import Image from 'next/image'
 import Header from '../components/Header/index'
 import About from '../components/About/index'
+import Partiner from '../components/Partiner'
+import Footer from '../components/Footer'
 
 import 'tailwindcss/tailwind.css';
 
@@ -9,9 +11,8 @@ const home = () => {
     <>
       <Header/>
       <About/>
-      <div className="mt-32">
-
-      </div>
+      <Partiner/>
+      <Footer/>
     </>
   )
 }

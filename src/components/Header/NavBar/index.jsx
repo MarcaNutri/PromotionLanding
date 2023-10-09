@@ -23,7 +23,7 @@ const NavBar = ( ) => {
 
       <div className={`flex md:hidden justify-between items-center`}>
         <Image src={LogoWhite} width={132} alt="Logo - MarcaNutri" className="cursor-pointer"/>
-        <Image src={Menu} width={24} alt="Logo - MarcaNutri" className="cursor-pointer"/>
+        <Image src={Menu} width={24} alt="Menu" className="cursor-pointer"/>
       </div>
 
     </div>
