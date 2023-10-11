@@ -8,7 +8,9 @@
     "start": "next start",
     "lint": "next lint",
     "check-format": "prettier --check .",
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "@types/node": "18.16.3",
@@ -27,6 +29,7 @@
   "devDependencies": {
     "eslint": "^8.39.0",
     "eslint-config-prettier": "^8.8.0",
+    "gh-pages": "^6.0.0",
     "prettier": "^2.8.8"
   }
 }
