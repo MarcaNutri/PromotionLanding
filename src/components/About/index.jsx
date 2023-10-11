@@ -10,7 +10,7 @@ const NavBar = ( ) => {
   const [screenSize, setScreenSize] = useState()
 
   return (
-    <div className={`mt-16 md:mt-36 p-4`}>
+    <div id="about" className={`mt-16 md:mt-36 p-4`}>
       <div className="text-center">
         <p className={`${styles.color_primary} text-lg md:font-medium`}>Na
           <span className={`${styles.color_fifhty} ${styles.secundary_font} text-4xl`}> Marca</span>

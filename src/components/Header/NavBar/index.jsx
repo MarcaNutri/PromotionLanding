@@ -6,6 +6,15 @@ import Menu from '../../../../assets/menu.svg'
 import LogoWhite from '../../../../assets/icon-white.png'
 
 const NavBar = ( ) => {
+
+  const scrollToElement = (elementId) => {
+    const element = document.getElementById(elementId);
+
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+  };
+
   return (
     <div className={`w-full lg:w-10/12 md:px-7 mx-auto ${styles.navbar_container}`}>
       <div
@@ -15,9 +24,30 @@ const NavBar = ( ) => {
       >
         <Image src={Logo} width={173} alt="Logo - MarcaNutri" className="ml-4 mb-1 cursor-pointer"/>
         <div className="flex items-center">
-          <p className={`${styles.color_primary} mx-4 font-bold text-xl cursor-pointer`}>Home</p>
-          <p className={`${styles.color_secundary} mx-4 font-medium text-xl cursor-pointer`}>Saúde com especialistas</p>
-          <p className={`${styles.color_secundary} mx-4 font-medium text-xl cursor-pointer`}>Parceiros</p>
+          <p
+            className={`${styles.color_primary} mx-4 font-bold text-xl cursor-pointer hover:brightness-75`}
+            onClick={() => {
+              window.scrollTo({ top: 0, behavior: 'smooth' })
+            }}
+          >
+            Home
+          </p>
+          <p
+            className={`${styles.color_secundary} mx-4 font-medium text-xl cursor-pointer hover:brightness-75`}
+            onClick={() => {
+              scrollToElement("about")
+            }}
+          >
+            Saúde com especialistas
+            </p>
+          <p
+            className={`${styles.color_secundary} mx-4 font-medium text-xl cursor-pointer hover:brightness-75`}
+            onClick={() => {
+              scrollToElement("partiner")
+            }}
+          >
+              Parceiros
+          </p>
         </div>
       </div>
 

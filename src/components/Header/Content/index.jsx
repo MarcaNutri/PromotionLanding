@@ -6,6 +6,14 @@ import Image1 from '../../../../assets/imagem-header-1.png'
 import Image2 from '../../../../assets/imagem-header-2.png'
 
 const Content = ( ) => {
+  const scrollToElement = (elementId) => {
+    const element = document.getElementById(elementId);
+
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+  };
+
   return (
     <div
       className={`flex justify-center md:items-center md:justify-around  lg:justify-around py-4 ${styles.primary_font} ${styles.content_container}`}
@@ -37,7 +45,7 @@ const Content = ( ) => {
 
         </div>
 
-        <button className={`${styles.call_button} m-auto md:m-0 md:mt-3`}>
+        <button className={`${styles.call_button} m-auto md:m-0 md:mt-3 hover:brightness-90 ease-in-out duration-200`} onClick={() => {scrollToElement("partiner")}}>
           Agende uma consulta
         </button>
 

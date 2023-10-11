@@ -25,8 +25,14 @@ const Partiner = () => {
     }
   }, [])
 
+  const openWhatsApp = (phoneNumber) => {
+    const message = encodeURIComponent('Olá, obtive seu contato através do site MarcaNutri, gostaria de marcar uma consulta.');
+    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${message}`;
+    window.open(whatsappUrl);
+  };
+
   return (
-    <div className={`p-4 mb-16`}>
+    <div id="partiner" className={`p-4 mb-16`}>
       <div className="flex justify-center mt-8 mb-16 md:my-28">
         <p
           className={`${styles.color_fifhty} text-2xl md:text-5xl font-semibold`}
@@ -106,7 +112,7 @@ const Partiner = () => {
                   Nutrição Funcional
                 </p>
               </div>
-              <button className={`flex ${styles.whats_button} mt-2`}>
+              <button className={`flex ${styles.whats_button} mt-2 hover:brightness-90 ease-in-out duration-200`} onClick={() => {openWhatsApp("53999254275")}}>
                 <Image src={WhatsApp} width={33} alt="email" className="mr-2" />{' '}
                 Atendimento
               </button>
@@ -144,7 +150,7 @@ const Partiner = () => {
               />
               Nutrição Funcional
             </p>
-            <button className={`flex ${styles.whats_button} mt-2`}>
+            <button className={`flex ${styles.whats_button} mt-2 hover:brightness-90 ease-in-out duration-200`} onClick={() => {openWhatsApp("53999254275")}}>
               <Image
                 src={WhatsApp}
                 width={screenSize < 767 ? 24 : 33}
@@ -220,7 +226,7 @@ const Partiner = () => {
                   Nutrição Funcional
                 </p>
               </div>
-              <button className={`flex ${styles.whats_button} mt-2`}>
+              <button className={`flex ${styles.whats_button} mt-2 hover:brightness-90 ease-in-out duration-200`} onClick={() => {openWhatsApp("53999254275")}}>
                 <Image src={WhatsApp} width={33} alt="email" className="mr-2" />{' '}
                 Atendimento
               </button>
@@ -258,7 +264,7 @@ const Partiner = () => {
               />
               Nutrição Funcional
             </p>
-            <button className={`flex ${styles.whats_button} mt-2`}>
+            <button className={`flex ${styles.whats_button} mt-2 hover:brightness-90 ease-in-out duration-200`} onClick={() => {openWhatsApp("53999254275")}}>
               <Image
                 src={WhatsApp}
                 width={screenSize < 767 ? 24 : 33}
@@ -333,7 +339,7 @@ const Partiner = () => {
                   Nutrição Funcional
                 </p>
               </div>
-              <button className={`flex ${styles.whats_button} mt-2`}>
+              <button className={`flex ${styles.whats_button} mt-2 hover:brightness-90 ease-in-out duration-200`} onClick={() => {openWhatsApp("53999254275")}}>
                 <Image src={WhatsApp} width={33} alt="email" className="mr-2" />{' '}
                 Atendimento
               </button>
@@ -371,7 +377,7 @@ const Partiner = () => {
               />
               Nutrição Funcional
             </p>
-            <button className={`flex ${styles.whats_button} mt-2`}>
+            <button className={`flex ${styles.whats_button} mt-2 hover:brightness-90 ease-in-out duration-200`} onClick={() => {openWhatsApp("53999254275")}}>
               <Image
                 src={WhatsApp}
                 width={screenSize < 767 ? 24 : 33}
@@ -446,7 +452,7 @@ const Partiner = () => {
                   Nutrição Funcional
                 </p>
               </div>
-              <button className={`flex ${styles.whats_button} mt-2`}>
+              <button className={`flex ${styles.whats_button} mt-2 hover:brightness-90 ease-in-out duration-200`} onClick={() => {openWhatsApp("53999254275")}}>
                 <Image src={WhatsApp} width={33} alt="email" className="mr-2" />{' '}
                 Atendimento
               </button>
@@ -484,7 +490,7 @@ const Partiner = () => {
               />
               Nutrição Funcional
             </p>
-            <button className={`flex ${styles.whats_button} mt-2`}>
+            <button className={`flex ${styles.whats_button} mt-2 hover:brightness-90 ease-in-out duration-200`} onClick={() => {openWhatsApp("53999254275")}}>
               <Image
                 src={WhatsApp}
                 width={screenSize < 767 ? 24 : 33}
