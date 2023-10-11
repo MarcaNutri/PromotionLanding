@@ -8,7 +8,7 @@ import WhatsApp from '../../../assets/whatsapp.svg'
 import Facebook from '../../../assets/facebook.svg'
 import Instagram from '../../../assets/instagram.svg'
 
-const Partiner = () => {
+const Footer = () => {
 
   const [screenSize, setScreenSize] = useState();
 
@@ -17,6 +17,7 @@ const Partiner = () => {
   };
 
   useEffect(() => {
+    setScreenSize(window?.innerWidth)
     // Adicionar um ouvinte de redimensionamento
     window.addEventListener('resize', updateScreenSize);
 
@@ -28,7 +29,7 @@ const Partiner = () => {
 
   return (
     <div className={``}>
-      <Image src={Logo} width={screenSize < 1200 ? 230 : 460} alt="MarcaNutri" className="m-auto"/>
+      <Image src={Logo} width={screenSize < 1200 ? 180 : 460} alt="MarcaNutri" className="m-auto"/>
       <p className={`${styles.color_primary} ${styles.secundary_font} text-4xl lg:text-6xl text-center`}>
         Não espere mais para cuidar da sua saúde e bem-estar!
       </p>
@@ -64,8 +65,8 @@ const Partiner = () => {
           </div>
           <p>Avenida ipsum lorem, 1010 - Pelotas RS CEP 0000-000</p>
           <div className="flex mt-4 mb-4">
-            <Image src={Facebook} width={40} alt="facebook" className="mr-2"/>
-            <Image src={Instagram} width={40} alt="instagram"/>
+            <Image src={Facebook} width={40} alt="facebook" className="mr-2 cursor-pointer"/>
+            <Image src={Instagram} width={40} alt="instagram" className="mr-2 cursor-pointer"/>
           </div>
         </div>
 
@@ -74,4 +75,4 @@ const Partiner = () => {
   )
 }
 
-export default Partiner
+export default Footer

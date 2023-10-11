@@ -1,6 +1,6 @@
 import Image from 'next/image'
-import Header from '../components/Header/index'
-import About from '../components/About/index'
+import Header from '../components/Header'
+import About from '../components/About'
 import Partiner from '../components/Partiner'
 import Footer from '../components/Footer'
 

@@ -1,1 +1,56 @@
 @import '../../styles/variables.module.scss';
+
+
+.container {
+  max-width: 1580px;
+}
+
+.text_container {
+  min-width: 160px;
+  max-width: 280px;
+}
+
+
+.whats_button {
+  width: 202px;
+  height: 49px;
+  flex-shrink: 0;
+  padding: 0px 46px 0px 46px;
+  border-radius: 20px;
+  background: #96C94F;
+  align-items: center;
+  justify-content: center;
+  color: #FFF;
+  font-family: Roboto;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.hr_partiner {
+  max-width: 345px;
+  min-width: 280px;
+  height: 1px;
+  background: #96C94F;
+  margin: 40px auto;
+}
+
+@media (max-width:767px) {
+  .whats_button {
+    width: 171px;
+    height: 41px;
+    flex-shrink: 0;
+    padding: 0px 23x 0px 23px;
+    border-radius: 20px;
+    background: #96C94F;
+    align-items: center;
+    justify-content: center;
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+}
