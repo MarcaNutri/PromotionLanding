@@ -34,6 +34,11 @@ const Document = ()=>{
                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("link", {
                         href: "https://fonts.googleapis.com/css2?family=Jomhuria&family=Roboto:wght@400;500&display=swap",
                         rel: "stylesheet"
+                    }),
+                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("link", {
+                        rel: "icon",
+                        type: "image/png",
+                        href: "../../assets/logo-small.png"
                     })
                 ]
             }),
