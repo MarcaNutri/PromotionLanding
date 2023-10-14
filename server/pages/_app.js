@@ -15,8 +15,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(893);
 /* harmony import */ var styles_globals_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(108);
 /* harmony import */ var styles_globals_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(styles_globals_css__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var react_ga__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(82);
+/* harmony import */ var react_ga__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_ga__WEBPACK_IMPORTED_MODULE_2__);
 
 
+
+const id = "G-TDJSD87QN1";
+react_ga__WEBPACK_IMPORTED_MODULE_2___default().initialize(id);
 /* eslint-disable */ function App({ Component , pageProps  }) {
     return /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(Component, {
         ...pageProps
@@ -38,6 +43,14 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 module.exports = require("react");
+
+/***/ }),
+
+/***/ 82:
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("react-ga");
 
 /***/ })
 
