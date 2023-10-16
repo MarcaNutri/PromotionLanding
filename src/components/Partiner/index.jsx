@@ -128,7 +128,7 @@ hábitos para mulheres.
                   Nutrição Funcional
                 </p>
               </div>
-              <button className={`flex ${styles.whats_button} mt-2 hover:brightness-90 ease-in-out duration-200`} onClick={() => {openWhatsApp("539984452760", 'Dra. Rafaela Ratto')}}>
+              <button className={`flex ${styles.whats_button} mt-2 hover:brightness-90 ease-in-out duration-200`} onClick={() => {openWhatsApp("53984452760", 'Dra. Rafaela Ratto')}}>
                 <Image src={WhatsApp} width={33} alt="email" className="mr-2" />{' '}
                 Atendimento
               </button>
