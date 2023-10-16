@@ -68,10 +68,11 @@ const Footer = () => {
                 <div className={`${styles.footer_line}`} />
                 <p className="flex mt-2">
                   <Image src={Email} width={28} alt="email" className="mr-2" />{' '}
-                  Marcanutri@gmail.com
+                  contato@marcanutri.com
                 </p>
                 <button
                   className={`flex ${styles.whats_button} mt-2 hover:brightness-90 ease-in-out duration-200`}
+                  onClick={() => { window.open(`https://wa.me/5399254275?text=${'Olá, vim através do MarcaNutri e preciso de auxílio!'}`)}}
                 >
                   <Image
                     src={WhatsApp}
@@ -84,7 +85,7 @@ const Footer = () => {
               </div>
             </div>
           </div>
-          <p>Avenida ipsum lorem, 1010 - Pelotas RS CEP 0000-000</p>
+          <p>Demétrio ribeiro, 1219 - Pelotas RS CEP 96030-022</p>
           <div className="flex mt-4 mb-4">
             <Image
               src={Facebook}

@@ -130,8 +130,8 @@ const Partiner = () => {
                 </p>
               </div>
               <button className={`flex ${styles.whats_button} mt-2 hover:brightness-90 ease-in-out duration-200`} onClick={() => {openWhatsApp("53984452760", 'Rafaela Ratto')}}>
-                <Image src={WhatsApp} width={33} alt="email" className="mr-2" />{' '}
-                Atendimento
+                <Image src={WhatsApp} width={24} alt="email" className="mr-2" />{' '}
+                Agendar Consulta
               </button>
             </div>
           </div>
@@ -170,11 +170,11 @@ const Partiner = () => {
             <button className={`flex ${styles.whats_button} mt-2 hover:brightness-90 ease-in-out duration-200`} onClick={() => {openWhatsApp("53984452760", 'Rafaela Ratto')}}>
               <Image
                 src={WhatsApp}
-                width={screenSize < 767 ? 24 : 33}
+                width={screenSize < 767 ? 24 : 26}
                 alt="email"
                 className="mr-1"
               />{' '}
-              Atendimento
+                Agendar Consulta
             </button>
           </div>
         </div>
@@ -242,8 +242,8 @@ const Partiner = () => {
                 </p>
               </div>
               <button className={`flex ${styles.whats_button} mt-2 hover:brightness-90 ease-in-out duration-200`} onClick={() => {openWhatsApp("53991954110", 'Natalia Farias')}}>
-                <Image src={WhatsApp} width={33} alt="email" className="mr-2" />{' '}
-                Atendimento
+                <Image src={WhatsApp} width={24} alt="email" className="mr-2" />{' '}
+                Agendar Consulta
               </button>
             </div>
           </div>
@@ -273,11 +273,11 @@ const Partiner = () => {
             <button className={`flex ${styles.whats_button} mt-2 hover:brightness-90 ease-in-out duration-200`} onClick={() => {openWhatsApp("53991954110", 'Natalia Farias')}}>
               <Image
                 src={WhatsApp}
-                width={screenSize < 767 ? 24 : 33}
+                width={screenSize < 767 ? 24 : 26}
                 alt="email"
                 className="mr-1"
               />{' '}
-              Atendimento
+              Agendar Consulta
             </button>
           </div>
         </div>
