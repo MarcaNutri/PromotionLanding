@@ -2,6 +2,7 @@ import react, { useState, useEffect } from 'react'
 import styles from './style.module.scss'
 import Image from 'next/image'
 import Nutricionista from '../../../assets/parceiro.png'
+import Nutricionista1 from '../../../assets/rafaela.png'
 import Logo from '../../../assets/MarcaNutri.svg'
 import Check from '../../../assets/checkgreen.svg'
 import SmallCheck from '../../../assets/smallcheck.svg'
@@ -65,7 +66,7 @@ const Partiner = () => {
         <div className={`${styles.color_six} flex mb-8 md:mb-16`}>
           <div style={{ minWidth: '83px' }}>
             <Image
-              src={Nutricionista}
+              src={Nutricionista1}
               width={screenSize < 767 ? 83 : 198}
               alt="nutricionista"
             />
@@ -77,16 +78,21 @@ const Partiner = () => {
             <p
               className={`${styles.color_fifhty} text-base md:text-2xl font-semibold`}
             >
-              Dra. Renata Silva
+              Dra. Rafaela Ratto
             </p>
             <p className={`text-xs md:text-base ${styles.text_container}`}>
-              Apaixonada pela nutrição e o que ela pode fazer e faz na vida das
-              pessoas. Ajudo pessoas a melhorarem sua qualidade de vida,
-              recuperarem a autoestima e alcançar o tão esperado objetivo, de
-              forma mais fácil, prazerosa e sem sofrimento
+            Nutricionista clínica com atuação na área esportiva e comportamental. 2 anos de atuação no
+mercado, dentro desses dois anos trabalhando ativamente com emagrecimento e mudança de
+hábitos para mulheres.
             </p>
             <p className={`text-base font-semibold hidden md:block`}>
-              CRN: 8321
+              CRN: 10554P
+            </p>
+            <p className={`text-base font-semibold hidden md:block`}>
+              R$: 190
+            </p>
+            <p className={`text-base font-semibold hidden md:block`}>
+              Rua Andrade Neves 2998
             </p>
 
             <div className="block md:hidden">
@@ -110,7 +116,7 @@ const Partiner = () => {
                     alt="Check - icon"
                     className="mr-1 md:mr-2"
                   />
-                  Vegetarianismo e Veganismo
+                  Comportamental
                 </p>
                 <p className={`flex items-center text-xs md:text-base mb-1`}>
                   <Image
@@ -122,7 +128,7 @@ const Partiner = () => {
                   Nutrição Funcional
                 </p>
               </div>
-              <button className={`flex ${styles.whats_button} mt-2 hover:brightness-90 ease-in-out duration-200`} onClick={() => {openWhatsApp("53999254275", 'Dra. Renata Silva')}}>
+              <button className={`flex ${styles.whats_button} mt-2 hover:brightness-90 ease-in-out duration-200`} onClick={() => {openWhatsApp("539984452760", 'Dra. Rafaela Ratto')}}>
                 <Image src={WhatsApp} width={33} alt="email" className="mr-2" />{' '}
                 Atendimento
               </button>
@@ -149,7 +155,7 @@ const Partiner = () => {
                 alt="Check - icon"
                 className="mr-1 md:mr-2"
               />
-              Vegetarianismo e Veganismo
+              Comportamental
             </p>
             <p className={`flex items-center text-xs md:text-base mb-2`}>
               <Image
@@ -160,7 +166,7 @@ const Partiner = () => {
               />
               Nutrição Funcional
             </p>
-            <button className={`flex ${styles.whats_button} mt-2 hover:brightness-90 ease-in-out duration-200`} onClick={() => {openWhatsApp("53999254275", 'Dra. Renata Silva')}}>
+            <button className={`flex ${styles.whats_button} mt-2 hover:brightness-90 ease-in-out duration-200`} onClick={() => {openWhatsApp("539984452760", 'Dra. Rafaela Ratto')}}>
               <Image
                 src={WhatsApp}
                 width={screenSize < 767 ? 24 : 33}
