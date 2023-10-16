@@ -79,7 +79,7 @@ const Partiner = () => {
             <p
               className={`${styles.color_fifhty} text-base md:text-2xl font-semibold`}
             >
-              Dra. Rafaela Ratto
+              Rafaela Ratto
             </p>
             <p className={`text-xs md:text-base ${styles.text_container}`}>
                           Nutricionista clínica com atuação na área esportiva e comportamental. 2 anos de atuação no
@@ -129,7 +129,7 @@ const Partiner = () => {
                   Nutrição Funcional
                 </p>
               </div>
-              <button className={`flex ${styles.whats_button} mt-2 hover:brightness-90 ease-in-out duration-200`} onClick={() => {openWhatsApp("53984452760", 'Dra. Rafaela Ratto')}}>
+              <button className={`flex ${styles.whats_button} mt-2 hover:brightness-90 ease-in-out duration-200`} onClick={() => {openWhatsApp("53984452760", 'Rafaela Ratto')}}>
                 <Image src={WhatsApp} width={33} alt="email" className="mr-2" />{' '}
                 Atendimento
               </button>
@@ -167,7 +167,7 @@ const Partiner = () => {
               />
               Nutrição Funcional
             </p>
-            <button className={`flex ${styles.whats_button} mt-2 hover:brightness-90 ease-in-out duration-200`} onClick={() => {openWhatsApp("53984452760", 'Dra. Rafaela Ratto')}}>
+            <button className={`flex ${styles.whats_button} mt-2 hover:brightness-90 ease-in-out duration-200`} onClick={() => {openWhatsApp("53984452760", 'Rafaela Ratto')}}>
               <Image
                 src={WhatsApp}
                 width={screenSize < 767 ? 24 : 33}
@@ -198,7 +198,7 @@ const Partiner = () => {
             <p
               className={`${styles.color_fifhty} text-base md:text-2xl font-semibold`}
             >
-              Dra. Natalia Farias
+              Natalia Farias
             </p>
             <p className={`text-xs md:text-base ${styles.text_container}`}>
               Sou Nutricionista formada pela Universidade
@@ -241,7 +241,7 @@ const Partiner = () => {
                   Nutrição Clínica
                 </p>
               </div>
-              <button className={`flex ${styles.whats_button} mt-2 hover:brightness-90 ease-in-out duration-200`} onClick={() => {openWhatsApp("53991954110", 'Dra. Natalia Farias')}}>
+              <button className={`flex ${styles.whats_button} mt-2 hover:brightness-90 ease-in-out duration-200`} onClick={() => {openWhatsApp("53991954110", 'Natalia Farias')}}>
                 <Image src={WhatsApp} width={33} alt="email" className="mr-2" />{' '}
                 Atendimento
               </button>
@@ -270,7 +270,7 @@ const Partiner = () => {
               />
               Nutrição Clínica
             </p>
-            <button className={`flex ${styles.whats_button} mt-2 hover:brightness-90 ease-in-out duration-200`} onClick={() => {openWhatsApp("53991954110", 'Dra. Natalia Farias')}}>
+            <button className={`flex ${styles.whats_button} mt-2 hover:brightness-90 ease-in-out duration-200`} onClick={() => {openWhatsApp("53991954110", 'Natalia Farias')}}>
               <Image
                 src={WhatsApp}
                 width={screenSize < 767 ? 24 : 33}
