@@ -172,11 +172,11 @@ const Partiner = () => {
           </div>
         </div>
 
-        <div className={`${styles.hr_partiner} block md:hidden mb-8`} />
+        {/* <div className={`${styles.hr_partiner} block md:hidden mb-8`} /> */}
 
         {/* Segunda Nutri */}
 
-        <div className={`${styles.color_six} flex mb-8 md:mb-16`}>
+        {/* <div className={`${styles.color_six} flex mb-8 md:mb-16`}>
           <div style={{ minWidth: '83px' }}>
             <Image
               src={Nutricionista}
@@ -284,12 +284,12 @@ const Partiner = () => {
               Atendimento
             </button>
           </div>
-        </div>
+        </div> */}
 
         <div className={`${styles.hr_partiner} block md:hidden mb-8`} />
         {/* Terceira Nutri */}
 
-        <div className={`${styles.color_six} flex mb-8 md:mb-16`}>
+        {/* <div className={`${styles.color_six} flex mb-8 md:mb-16`}>
           <div style={{ minWidth: '83px' }}>
             <Image
               src={Nutricionista}
@@ -399,10 +399,10 @@ const Partiner = () => {
           </div>
         </div>
 
-        <div className={`${styles.hr_partiner} block md:hidden mb-8`} />
+        <div className={`${styles.hr_partiner} block md:hidden mb-8`} /> */}
         {/* Quarta Nutri */}
 
-        <div className={`${styles.color_six} flex mb-8 md:mb-16`}>
+        {/* <div className={`${styles.color_six} flex mb-8 md:mb-16`}>
           <div style={{ minWidth: '83px' }}>
             <Image
               src={Nutricionista}
@@ -512,7 +512,7 @@ const Partiner = () => {
           </div>
         </div>
 
-        <div className={`${styles.hr_partiner} block md:hidden mb-8`} />
+        <div className={`${styles.hr_partiner} block md:hidden mb-8`} /> */}
       </div>
     </div>
   )
