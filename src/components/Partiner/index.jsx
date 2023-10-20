@@ -542,7 +542,7 @@ Monteiro Cícero, 164 - sala 302
             <p
               className={`${styles.color_fifhty} text-base md:text-2xl font-semibold`}
             >
-              Suzana
+              Suzana Antiqueira
             </p>
             <p className={`text-xs md:text-base ${styles.text_container}`}>
               Desde o início da minha formação estudo a nutrição voltada ao comportamento alimentar, história e cultura da alimentação. Atualmente trabalho a nutrição clínica com um olhar mais consciente e sustentável.
