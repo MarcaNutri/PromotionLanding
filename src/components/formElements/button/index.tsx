@@ -1,5 +1,5 @@
 import React from "react";
-import style from '../Button/style.module.scss'
+import style from './Button/style.module.scss'
 
 interface ButtonElementProps {
   id?:string;
