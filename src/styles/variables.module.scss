@@ -4,58 +4,60 @@ $background: #FFF;
 $primary: #289257;
 $secundary: #898989;
 
+$success:#96C94F;
+$error:#FF3B3B;
+$warning:#FDF3D1;
 
-.color_primary {
+$disabled: #DDE5E9;
+
+//FONTS
+$text-input-font-family:'Roboto';
+$text-title-font-family:'Roboto';
+$text-colored-title-font-family:'Nunito Sans';
+
+//TEXT COLORS
+$text-input-color: #3A3A3C;
+$label-text-color: #8F90A6;
+$placeholder-text-color: #DDE5E9;
+$title-text-color:#525252;
+
+//TEXT SIZES
+$text-input-size: 16px;
+$text-input-size-medium: 20px;
+$text-input-size-big: 32px;
+$label-text-size: 20px;
+$placeholder-text-size: 16px;
+$title-text-size:36px;
+$medin-text-size:24px;
+
+//TEXT WEIGHT
+$text-input-weight: 600;
+$label-text-weight: 600;
+$placeholder-text-weight: 600;
+
+//TEXT LINE HEIGHT
+$text-input-line-height: 150%;
+$label-text-line-height: 150%;
+
+//TEXT LETTER SPACING
+$text-input-letter-spacing: 0.1px;
+$label-text-letter-spacing: 0.1px;
+
+
+//COLORS
+
+.primary_color {
   color: $primary;
 }
 
-.color_secundary {
+.secundary_color {
   color: $secundary;
 }
 
-.color_tertiary {
-  color: rgba(255, 255, 255, 0.88);;
+.success_color {
+  color: $success;
 }
 
-.color_forth {
-  color: #A6A6A6;
-}
-
-.color_fifhty {
-  color: #96C94F;;
-}
-
-.color_six {
-  color:rgba(92, 92, 92, 0.81);
-}
-
-.color_white {
-  color: #FFF;
-}
-
-.background_primary {
-  background-color: $primary;
-}
-
-//TAMANHOS
-
-@media (min-width: 1800px) {
-  $font-title: 2.25rem;
-  $font-body: 1.875rem;
-}
-
-@media (max-width:1800px) {
-  $font-title: 2rem;
-  $font-body: 1.5rem;
-}
-
-
-//FONTES
-
-.primary_font {
-  font-family: 'Roboto', sans-serif;
-}
-
-.secundary_font {
-  font-family: 'Jomhuria', cursive;
+.black_color {
+  color: #5C5C5C;
 }
