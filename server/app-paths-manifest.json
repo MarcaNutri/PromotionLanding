@@ -1,12 +1,12 @@
 {
   "/_not-found": "app/_not-found.js",
-  "/favicon.ico/route": "app/favicon.ico/route.js",
   "/page": "app/page.js",
-  "/home/page": "app/home/page.js",
+  "/favicon.ico/route": "app/favicon.ico/route.js",
   "/customer/register/page": "app/customer/register/page.js",
+  "/home/howItWorks/page": "app/home/howItWorks/page.js",
+  "/home/page": "app/home/page.js",
+  "/login/page": "app/login/page.js",
   "/home/partner/page": "app/home/partner/page.js",
   "/login/forgotPassword/page": "app/login/forgotPassword/page.js",
-  "/home/howItWorks/page": "app/home/howItWorks/page.js",
-  "/login/page": "app/login/page.js",
   "/login/updatePassword/page": "app/login/updatePassword/page.js"
 }
