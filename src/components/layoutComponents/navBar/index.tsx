@@ -19,8 +19,8 @@ const NavBar: React.FC<NavProps> = () => {
 
   return(
     <>
-      <div className={`flex justify-between lg:justify-evenly items-center p-6`}>
-        <Image src={Logo} width={223} alt="Logo"/>
+      <div className={`flex justify-center lg:justify-center items-center p-6 m-auto`}>
+        <Image src={Logo} width={223} alt="Logo" className="mr-20 mb-3"/>
         <div className={`hidden lg:flex items-center`}>
           <p
             className={`${Style.navbar_item} ${Style.navbar_item_active} mr-4 hover:brightness-75 ease-in-out duration-200`}
@@ -28,11 +28,6 @@ const NavBar: React.FC<NavProps> = () => {
             <Link href="/">
             Home
             </Link>
-          </p>
-          <p
-            className={`${Style.navbar_item} mr-4 hover:brightness-75 ease-in-out duration-200`}
-          >
-            Saúde com especialistas
           </p>
           <p
             className={`${Style.navbar_item} mr-4 hover:brightness-75 ease-in-out duration-200`}
@@ -45,12 +40,6 @@ const NavBar: React.FC<NavProps> = () => {
             <Link href={"/home/howItWorks"}>Como funciona</Link>
           </p>
         </div>
-        <Link href="/login">
-          <button className={`${Style.login_button} hidden px-8 items-center lg:flex`}>
-            <Image src={LogoButton} width={32} alt="Logo" className={`mr-5`}/>
-            <span className={`${Style.login_button_text}`}>Login</span>
-          </button>
-        </Link>
         <Image
           src={Menu}
           width={24}
@@ -64,11 +53,6 @@ const NavBar: React.FC<NavProps> = () => {
             className={`${Style.navbar_item} ${Style.navbar_item_active} mr-4 hover:brightness-75`}
           >
             Home
-          </p>
-          <p
-            className={`${Style.navbar_item} mr-4 hover:brightness-75 ease-in-out duration-200`}
-          >
-            Saúde com especialistas
           </p>
           <p
             className={`${Style.navbar_item} mr-4 hover:brightness-75 ease-in-out duration-200`}

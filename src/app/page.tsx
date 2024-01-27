@@ -15,7 +15,7 @@ import NavBar from "@/components/layoutComponents/navBar"
 import NutriHeader from '@public/assets/Home/NutriHeader.png'
 import Clock from '@public/assets/Home/clock.svg'
 import stethoscope from '@public/assets/Home/stethoscope.svg'
-import Search from '@public/assets/search.svg'
+import marcanutri from '@public/assets/marcanutri.svg'
 
 //Partiner
 import Nutricionista1 from '@public/assets/Home/rafaela.png'
@@ -24,16 +24,9 @@ import Check from '@public/assets/Home/CheckWhite.svg'
 import CheckGreen from '@public/assets/Home/checkgreen.svg'
 import logoWhite from '@public/assets/marcaNutriWhite.svg'
 
-//Find Nutri
-import FindImage from '@public/assets/Home/findImageSection.png'
-import FindImageMobile from '@public/assets/Home/findImageSectionMobile.png'
-
-//Inform
-import InformImg from '@public/assets/Home/informImg.png'
 //General
 import LogoRounded from '@public/assets/Home/logoRounded.svg'
 import LogoRoundedGreen from '@public/assets/Home/logoRoundedGreen.svg'
-import Location from '@public/assets/location.svg'
 import LocationWhite from '@public/assets/locationWhite.svg'
 import RoundedImage from '@public/assets/Home/roundedImages.png'
 
@@ -70,21 +63,15 @@ const Home = () => {
               O bom da vida é estar bem!
               </h1>
               <p className={`${Style.paragraph} ${Style.primary_color} text-base md:text-xl lg:text-xl`}>
-                Encontre aqui os melhores nutricionistas próximos a você e agende sua consulta
+              Encontre aqui os melhores nutricionistas de Pelotas próximos a você e agende sua consulta.
               </p>
 
-              <div className={`${Style.search_input_container} flex items-center justify-between`}>
-                <div className="flex">
-                  <Image src={Location} width={25} alt="icone de localização" className={``}/>
-                  <div className="flex flex-col">
-                    <label className={`${Style.search_input_label}`}>Cidade</label>
-                    <select className={`${Style.search_input}`}>
-                      <option value="Porto Alegre">Porto Alegre / RS</option>
-                    </select>
-                  </div>
-                </div>
-                <Image src={Search} width={16} alt="icone de busca" className={`${Style.search_input_icon}`}/>
-              </div>
+              <ButtonElement
+                size="large"
+                styleButton="round"
+                text="Agende uma consulta"
+                classProp="mt-20"
+              />
             </div>
           </div>
 
@@ -174,7 +161,7 @@ const Home = () => {
           >
             <div className="flex">
               <h3 className={`${Style.paragraph} text-center lg:text-5xl flex items-center mb-8 md:mb-16 m-auto`}>
-                Parceiros da <Image src={logoWhite} width={screenSize < 767 ? 83 : 262} alt="MarcaNutri" className="ml-3 mb-1"/>
+                Parceiros da <Image src={logoWhite} width={screenSize < 767 ? 83 : 262} alt="MarcaNutri" className="ml-3 mr-3 mb-2"/> Pelotas
               </h3>
             </div>
 
@@ -372,7 +359,7 @@ const Home = () => {
         >
           <div className={`${Style.primary_color} ${Style.paragraph}`}>
             <h2 className="text-base font-bold mb-4 md:text-3xl">A melhor rede de especialista em nutrição você encontra aqui</h2>
-            <div className="flex flex-wrap gap-4 text-xs mb-4">
+            <div className="flex flex-wrap gap-4 text-xs mb-4 lg:mr-4">
               <div>
                 <p className="flex font-bold mb-2 lg:text-2xl">
                   <Image
@@ -413,52 +400,18 @@ const Home = () => {
             className="mr-1 md:mr-2"
           />
         </section>
-
-        {/* Section find nutri */}
-
-        <section
-          className={`${Style.container_find_nutri} flex flex-col justify-center items-center text-white p-2 md:p-6 lg:p-6 md:mt-40 lg:mt-40`}
-        >
-          <div
-            className="max-w-[88rem] lg:max-w-[100rem] m-auto"
-          >
-            <div className="text-center">
-              <h3 className={`${Style.paragraph} text-2xl lg:text-5xl mb-8 md:mb-16`}>
-                Como encontrar meu nutricionista
-              </h3>
-            </div>
-            <Image
-              src={screenSize < 767 ? FindImageMobile : FindImage }
-              alt="Check - icon"
-              className="mb-8"
-            />
-          </div>
-          <ButtonElement
-            text="Agendar Agora"
-            size="large"
-            styleButton="rounded"
-          />
-        </section>
-
-        <section
-          className={`max-w-[88rem] flex gap-10 flex-wrap lg:flex-wrap lg:flex-nowrap items-center justify-center m-auto text-white p-2
-            md:p-6 lg:p-6 mt-20 md:mt-40 lg:mt-40 lg:max-w-[112rem]`
-          }
-        >
+        <section className="flex justify-center items-center flex-col mt-40">
           <Image
-            src={InformImg}
-            alt="Check - icon"
-            className="mb-8"
+            src={marcanutri}
+            width={561}
+            alt='marcanutri'
           />
+          <p className={`${Style.primary_color} text-center lg:text-4xl font-bold`}>
+          Não espere mais para cuidar da sua saúde e bem-estar!
+          </p>
 
-          <div className="lg:ml-40">
-            <h3 className={`${Style.paragraph} ${Style.primary_color} text-2xl lg:text-5xl mb-4 md:mb-8`}>Informações sobre Benefícios:</h3>
-            <p className={`${Style.paragraph} ${Style.secundary_color} text-base font-semibold md:font-medium md:text-2xl`}>
-              Acompanhamento de um profissional da nutrição não apenas ajuda a alcançar objetivos especificos, como perda de peso ou controle de doenças, mas também promove uma abordagem holística para a saúde fornecendo suporte personalizado para suas necessidades individuais.
-              </p>
-          </div>
         </section>
-          <Footer/>
+        <Footer/>
       </div>
     </>
   )

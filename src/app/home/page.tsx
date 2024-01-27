@@ -67,21 +67,15 @@ const Home = () => {
               O bom da vida é estar bem!
               </h1>
               <p className={`${Style.paragraph} ${Style.primary_color} text-base md:text-xl lg:text-xl`}>
-                Encontre aqui os melhores nutricionistas próximos a você e agende sua consulta
+              Encontre aqui os melhores nutricionistas de Pelotas próximos a você e agende sua consulta.
               </p>
 
-              <div className={`${Style.search_input_container} flex items-center justify-between`}>
-                <div className="flex">
-                  <Image src={Location} width={25} alt="icone de localização" className={``}/>
-                  <div className="flex flex-col">
-                    <label className={`${Style.search_input_label}`}>Cidade</label>
-                    <select className={`${Style.search_input}`}>
-                      <option value="Porto Alegre">Porto Alegre / RS</option>
-                    </select>
-                  </div>
-                </div>
-                <Image src={Search} width={16} alt="icone de busca" className={`${Style.search_input_icon}`}/>
-              </div>
+              <ButtonElement
+                size="large"
+                styleButton="round"
+                text="Agende uma consulta"
+                classProp="mt-20"
+              />
             </div>
           </div>
 
