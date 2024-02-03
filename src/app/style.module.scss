@@ -190,6 +190,23 @@
   border-radius: 0px 0px 0px 25%;
 }
 
+.whats_button {
+  width: 240px;
+  height: 49px;
+  flex-shrink: 0;
+  padding: 0px 20px 0px 20px;
+  border-radius: 20px;
+  background: #96C94F;
+  align-items: center;
+  justify-content: center;
+  color: #FFF;
+  font-family: Roboto;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
 
 @media (max-width:1450px ) {
 
@@ -288,6 +305,23 @@
   .container_specialty_logo {
     width: 36px;
     height: 36px;
+  }
+
+  .whats_button {
+    width: 200px;
+    height: 36px;
+    flex-shrink: 0;
+    padding: 0px 14px 0px 14px;
+    border-radius: 20px;
+    background: #96C94F;
+    align-items: center;
+    justify-content: center;
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
   }
 
 }
