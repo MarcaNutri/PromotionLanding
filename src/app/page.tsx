@@ -133,22 +133,22 @@ const Home = () => {
             <div className={`${Style.container_specialty}`}>
               <Image src={LogoRounded}  alt="logo" className={`${Style.container_specialty_logo}`}/>
               <p className={`${Style.paragraph} font-bold text-base md:text-2xl lg:text-2xl`}>Educação alimentar</p>
-              <p className={`${Style.paragraph} font-normal text-sm md:font-medium`}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sem velit viverra amet faucibus.</p>
+              <p className={`${Style.paragraph} font-normal text-sm md:font-medium`}>Transforme sua vida com escolhas saudáveis, descubra o poder do conhecimento nutricional!</p>
             </div>
             <div className={`${Style.container_specialty} ${Style.container_specialty_green}`}>
               <Image src={LogoRoundedGreen} alt="logo" className={`${Style.container_specialty_logo}`}/>
               <p className={`${Style.paragraph} font-bold text-base md:text-2xl lg:text-2xl`}>Educação nutricional</p>
-              <p className={`${Style.paragraph} font-normal text-sm md:font-medium`}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sem velit viverra amet faucibus.</p>
+              <p className={`${Style.paragraph} font-normal text-sm md:font-medium`}>Desperte seu potencial de bem-estar através do conhecimento alimentar.</p>
             </div>
             <div className={`${Style.container_specialty}`}>
               <Image src={LogoRounded} alt="logo" className={`${Style.container_specialty_logo}`}/>
               <p className={`${Style.paragraph} font-bold text-base md:text-2xl lg:text-2xl`}>Nutrição Clínica</p>
-              <p className={`${Style.paragraph} font-normal text-sm md:font-medium`}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sem velit viverra amet faucibus.</p>
+              <p className={`${Style.paragraph} font-normal text-sm md:font-medium`}>Cuidado personalizado para uma vida mais saudável. Confie na expertise nutricional!</p>
             </div>
             <div className={`${Style.container_specialty} ${Style.container_specialty_green}`}>
               <Image src={LogoRoundedGreen} alt="logo" className={`${Style.container_specialty_logo}`}/>
               <p className={`${Style.paragraph} font-bold text-base md:text-2xl lg:text-2xl`}>Nutrição em saúde da mulher</p>
-              <p className={`${Style.paragraph} font-normal text-sm md:font-medium`}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sem velit viverra amet faucibus.</p>
+              <p className={`${Style.paragraph} font-normal text-sm md:font-medium`}>Empodere sua saúde feminina com escolhas nutricionais conscientes.</p>
             </div>
           </div>
         </section>
