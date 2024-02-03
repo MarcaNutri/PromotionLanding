@@ -20,6 +20,7 @@ import marcanutri from '@public/assets/marcanutri.svg'
 //Partiner
 import Nutricionista1 from '@public/assets/Home/rafaela.png'
 import Nutricionista2 from '@public/assets/Home/natalia.png'
+import Nutricionista3 from '@public/assets/Home/Bruna.png'
 import Check from '@public/assets/Home/CheckWhite.svg'
 import CheckGreen from '@public/assets/Home/checkgreen.svg'
 import logoWhite from '@public/assets/marcaNutriWhite.svg'
@@ -157,7 +158,7 @@ const Home = () => {
         {/* PARTINERS */}
         <section className={`${Style.container_partiner} text-white`}>
           <div
-            className="max-w-[88rem] lg:max-w-[100rem] m-auto mt-20 md:mt-40 lg:mt-40 p-2 md:p-6 lg:p-6"
+            className="max-w-[88rem] lg:max-w-[100rem] m-auto mt-20 md:mt-40 lg:mt-40 p-2 md:p-6 lg:p-6 flex flex-wrap justify-center items-center"
           >
             <div className="flex">
               <h3 className={`${Style.paragraph} text-center lg:text-5xl flex items-center mb-8 md:mb-16 m-auto`}>
@@ -182,6 +183,190 @@ const Home = () => {
                     <p
                       className={` text-base md:text-2xl font-semibold`}
                     >
+                      Bruna Padilha <span className="text-sm">- CRN: 17216</span>
+                    </p>
+                    <p className={`text-xs md:text-base ${Style.text_container}`}>
+                    Nutricionista clínica com atuação na área esportiva e comportamental. 2 anos de atuação no mercado...
+                    </p>
+                    <p className={`text-base font-semibold hidden md:block`}>
+                      R$: 180,00
+                    </p>
+                    <p className={`text-base font-semibold hidden md:block ${Style.text_container} flex`} style={{display:'flex'}}>
+                      <Image src={LocationWhite} width={25} alt="icone de localização" className="mr-1"/> Endereço: Rua Major de Góes
+Monteiro Cícero, 164 - sala 302
+                    </p>
+
+                    <div className="block md:hidden">
+                      <div className="flex flex-col justify-center">
+                        <p className={`text-xs md:text-base font-semibold mb-2 mt-1`}>
+                          Especialidades
+                        </p>
+                        <p className={`flex items-center text-xs md:text-base mb-1`}>
+                          <Image
+                            src={Check}
+                            width={screenSize < 767 ? 10.8 : 20}
+                            alt="Check - icon"
+                            className="mr-1 md:mr-2"
+                          />
+                          Esporte e Exercício Físico
+                        </p>
+                        <p className={`flex items-center text-xs md:text-base mb-1`}>
+                          <Image
+                            src={Check}
+                            width={screenSize < 767 ? 10.8 : 20}
+                            alt="Check - icon"
+                            className="mr-1 md:mr-2"
+                          />
+                          Vegetarianismo e Veganismo
+                        </p>
+                        <p className={`flex items-center text-xs md:text-base mb-1`}>
+                          <Image
+                            src={Check}
+                            width={screenSize < 767 ? 10.8 : 20}
+                            alt="Check - icon"
+                            className="mr-1 md:mr-2"
+                          />
+                          Nutrição Funcional
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="hidden md:block">
+                    <p className={`text-xs md:text-base font-semibold mb-2`}>
+                      Especialidades
+                    </p>
+                    <p className={`flex items-center text-xs md:text-base mb-2`}>
+                      <Image
+                        src={Check}
+                        width={screenSize < 767 ? 10.8 : 20}
+                        alt="Check - icon"
+                        className="mr-1 md:mr-2"
+                      />
+                      Esporte e Exercício Físico
+                    </p>
+                    <p className={`flex items-center text-xs md:text-base mb-2`}>
+                      <Image
+                        src={Check}
+                        width={screenSize < 767 ? 10.8 : 20}
+                        alt="Check - icon"
+                        className="mr-1 md:mr-2"
+                      />
+                      Vegetarianismo e Veganismo
+                    </p>
+                    <p className={`flex items-center text-xs md:text-base mb-2`}>
+                      <Image
+                        src={Check}
+                        width={screenSize < 767 ? 10.8 : 20}
+                        alt="Check - icon"
+                        className="mr-1 md:mr-2"
+                      />
+                      Nutrição Funcional
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Segunda Parceira */}
+
+              <div>
+                <div className={`flex mb-8 md:mb-16`}>
+                  <div style={{ minWidth: '83px' }}>
+                    <Image
+                      src={Nutricionista2}
+                      width={screenSize < 767 ? 83 : 198}
+                      alt="nutricionista"
+                    />
+                    <p className={`text-sm font-semibold block md:hidden`}>R$ 120,00</p>
+                  </div>
+
+                  <div className="mr-3 ml-3">
+                    <p
+                      className={` text-base md:text-2xl font-semibold`}
+                    >
+                      Natalia Farias <span className="text-sm">- CRN: 11347P</span>
+                    </p>
+                    <p className={`text-xs md:text-base ${Style.text_container}`}>
+                    Sou Nutricionista formada pela UFPEL. Atualmente trabalho com a nutrição clínica e esportiva...
+                    </p>
+                    <p className={`text-base font-semibold hidden md:block`}>
+                      R$: 120,00
+                    </p>
+                    <p className={`text-base font-semibold hidden md:block ${Style.text_container} flex`} style={{display:'flex'}}>
+                      <Image src={LocationWhite} width={25} alt="icone de localização" className="mr-1"/> Endereço: Rua Andrade Neves 2998, Pelotas
+                    </p>
+
+                    <div className="block md:hidden">
+                      <div className="flex flex-col justify-center">
+                        <p className={`text-xs md:text-base font-semibold mb-2 mt-1`}>
+                          Especialidades
+                        </p>
+                        <p className={`flex items-center text-xs md:text-base mb-1`}>
+                          <Image
+                            src={Check}
+                            width={screenSize < 767 ? 10.8 : 20}
+                            alt="Check - icon"
+                            className="mr-1 md:mr-2"
+                          />
+                          Nutrição Esportiva
+                        </p>
+                        <p className={`flex items-center text-xs md:text-base mb-1`}>
+                          <Image
+                            src={Check}
+                            width={screenSize < 767 ? 10.8 : 20}
+                            alt="Check - icon"
+                            className="mr-1 md:mr-2"
+                          />
+                          Nutrição Clínica
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="hidden md:block">
+                    <p className={`text-xs md:text-base font-semibold mb-2`}>
+                      Especialidades
+                    </p>
+                    <p className={`flex items-center text-xs md:text-base mb-2`}>
+                      <Image
+                        src={Check}
+                        width={screenSize < 767 ? 10.8 : 20}
+                        alt="Check - icon"
+                        className="mr-1 md:mr-2"
+                      />
+                      Nutrição Esportiva
+                    </p>
+                    <p className={`flex items-center text-xs md:text-base mb-2`}>
+                      <Image
+                        src={Check}
+                        width={screenSize < 767 ? 10.8 : 20}
+                        alt="Check - icon"
+                        className="mr-1 md:mr-2"
+                      />
+                      Nutrição Clínica
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Terceira parceira */}
+
+            <div>
+                <div className={`flex mb-8 md:mb-16`}>
+                  <div style={{ minWidth: '83px' }}>
+                    <Image
+                      src={Nutricionista3}
+                      width={screenSize < 767 ? 83 : 198}
+                      alt="nutricionista"
+                    />
+                    <p className={`text-sm font-semibold block md:hidden`}>R$ 190,00</p>
+                  </div>
+
+                  <div className="mr-3 ml-3">
+                    <p
+                      className={` text-base md:text-2xl font-semibold`}
+                    >
                       Rafaela Ratto <span className="text-sm">- CRN: 10554P</span>
                     </p>
                     <p className={`text-xs md:text-base ${Style.text_container}`}>
@@ -190,8 +375,8 @@ const Home = () => {
                     <p className={`text-base font-semibold hidden md:block`}>
                       R$: 190,00
                     </p>
-                    <p className={`text-base font-semibold hidden md:block ${Style.text_container} flex`}>
-                      <Image src={LocationWhite} width={25} alt="icone de localização"/> Endereço: Rua Andrade Neves 2998, Pelotas
+                    <p className={`text-base font-semibold hidden md:block ${Style.text_container} flex`} style={{display:'flex'}}>
+                      <Image src={LocationWhite} width={25} alt="icone de localização" className="mr-1"/> Endereço: Rua Andrade Neves 2998, Pelotas
                     </p>
 
                     <div className="block md:hidden">
@@ -264,89 +449,6 @@ const Home = () => {
                   </div>
                 </div>
               </div>
-
-              {/* Segunda Parceira */}
-
-              <div>
-                <div className={`flex mb-8 md:mb-16`}>
-                  <div style={{ minWidth: '83px' }}>
-                    <Image
-                      src={Nutricionista2}
-                      width={screenSize < 767 ? 83 : 198}
-                      alt="nutricionista"
-                    />
-                    <p className={`text-sm font-semibold block md:hidden`}>R$ 120,00</p>
-                  </div>
-
-                  <div className="mr-3 ml-3">
-                    <p
-                      className={` text-base md:text-2xl font-semibold`}
-                    >
-                      Natalia Farias <span className="text-sm">- CRN: 11347P</span>
-                    </p>
-                    <p className={`text-xs md:text-base ${Style.text_container}`}>
-                    Sou Nutricionista formada pela UFPEL. Atualmente trabalho com a nutrição clínica e esportiva...
-                    </p>
-                    <p className={`text-base font-semibold hidden md:block`}>
-                      R$: 120,00
-                    </p>
-                    <p className={`text-base font-semibold hidden md:block ${Style.text_container} flex`}>
-                      <Image src={LocationWhite} width={25} alt="icone de localização" className={``}/> Endereço: Rua Andrade Neves 2998, Pelotas
-                    </p>
-
-                    <div className="block md:hidden">
-                      <div className="flex flex-col justify-center">
-                        <p className={`text-xs md:text-base font-semibold mb-2 mt-1`}>
-                          Especialidades
-                        </p>
-                        <p className={`flex items-center text-xs md:text-base mb-1`}>
-                          <Image
-                            src={Check}
-                            width={screenSize < 767 ? 10.8 : 20}
-                            alt="Check - icon"
-                            className="mr-1 md:mr-2"
-                          />
-                          Nutrição Esportiva
-                        </p>
-                        <p className={`flex items-center text-xs md:text-base mb-1`}>
-                          <Image
-                            src={Check}
-                            width={screenSize < 767 ? 10.8 : 20}
-                            alt="Check - icon"
-                            className="mr-1 md:mr-2"
-                          />
-                          Nutrição Clínica
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="hidden md:block">
-                    <p className={`text-xs md:text-base font-semibold mb-2`}>
-                      Especialidades
-                    </p>
-                    <p className={`flex items-center text-xs md:text-base mb-2`}>
-                      <Image
-                        src={Check}
-                        width={screenSize < 767 ? 10.8 : 20}
-                        alt="Check - icon"
-                        className="mr-1 md:mr-2"
-                      />
-                      Nutrição Esportiva
-                    </p>
-                    <p className={`flex items-center text-xs md:text-base mb-2`}>
-                      <Image
-                        src={Check}
-                        width={screenSize < 767 ? 10.8 : 20}
-                        alt="Check - icon"
-                        className="mr-1 md:mr-2"
-                      />
-                      Nutrição Clínica
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
           </div>
         </section>
 
