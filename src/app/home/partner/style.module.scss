@@ -144,6 +144,10 @@
 
 @media (max-width:1450px ) {
 
+  .container_header {
+    min-height:  680px;
+  }
+
   //Header
   .nutri_image {
     position: absolute !important;

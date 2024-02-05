@@ -60,10 +60,10 @@ const Partner = () => {
         <header className={`${Style.container_header}`}>
           <div className="max-w-[88rem] lg:max-w-[120rem] m-auto">
             <div className="px-2 md:p-8 lg:p-12">
-              <h1 className={`${Style.title} ${Style.primary_color} text-3xl md:text-6xl lg:text-8xl`}>
+              <h1 className={`${Style.title} ${Style.primary_color} ${Style.title_patter}`}>
               O bom da vida é estar bem!
               </h1>
-              <p className={`${Style.paragraph} ${Style.primary_color} mb-6 max-w-[60rem] text-base md:text-xl lg:text-3xl`}>
+              <p className={`${Style.paragraph} ${Style.primary_color} mb-6 max-w-[60rem] ${Style.subtitle_patter}`}>
                 Conectamos paciente que querem ter uma alimentação mais saudável a nutricionistas qualificados.
               </p>
               <ButtonElement
