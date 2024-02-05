@@ -9,6 +9,7 @@ interface ButtonElementProps {
   styleButton?:string
   classProp?:string
   type?:any
+  onClick?:any;
 }
 
 
@@ -19,7 +20,8 @@ const ButtonElement : React.FC<ButtonElementProps> = ({
   type = "button",
   disabled,
   styleButton = "primary",
-  classProp = ""
+  classProp = "",
+  onClick
 }) => {
 
   const handleSizeButton = () => {
@@ -51,6 +53,7 @@ const ButtonElement : React.FC<ButtonElementProps> = ({
       className={`${handleSizeButton()} ${classProp}`}
       type={type}
       disabled={disabled}
+      onClick={onClick}
     >
       {text}
     </button>

@@ -57,6 +57,14 @@ const Home = () => {
     window.open(whatsappUrl);
   };
 
+  const scrollToElement = (elementId:string) => {
+    const element = document.getElementById(elementId);
+
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+  };
+
   return (
     <>
       <div>
@@ -82,6 +90,7 @@ const Home = () => {
                 styleButton="round"
                 text="Agende uma consulta"
                 classProp="mt-20 mb-20 md:mb-0 lg:mb-0"
+                onClick={() => scrollToElement('partner')}
               />
             </div>
           </div>
@@ -238,7 +247,7 @@ const Home = () => {
         </section>
 
         {/* PARTINERS */}
-        <section className={`${Style.container_partiner} text-white`}>
+        <section className={`${Style.container_partiner} text-white`} id="partner">
           <div className="max-w-[88rem] lg:max-w-[100rem] m-auto mt-20 md:mt-40 lg:mt-40 p-2 md:p-6 lg:p-6 flex flex-wrap justify-center items-center">
             <div className="flex">
               <h3
@@ -720,6 +729,7 @@ const Home = () => {
               text="Agendar Agora"
               size="large"
               styleButton="rounded"
+              onClick={() => scrollToElement('partner')}
             />
           </div>
           <Image
