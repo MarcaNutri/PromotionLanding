@@ -74,12 +74,12 @@ const Home = () => {
           <div className="max-w-[88rem] lg:max-w-[120rem] m-auto">
             <div className="px-2 md:p-8 lg:p-12">
               <h1
-                className={`${Style.title} ${Style.primary_color} text-3xl md:text-6xl lg:text-8xl`}
+                className={`${Style.title} ${Style.primary_color} ${Style.title_patter}`}
               >
                 O bom da vida é estar bem!
               </h1>
               <p
-                className={`${Style.paragraph} ${Style.primary_color} text-base md:text-xl lg:text-xl`}
+                className={`${Style.paragraph} ${Style.primary_color} ${Style.subtitle_patter}`}
               >
                 Encontre aqui os melhores nutricionistas de Pelotas próximos a
                 você e agende sua consulta.
@@ -89,7 +89,7 @@ const Home = () => {
                 size="large"
                 styleButton="round"
                 text="Agende uma consulta"
-                classProp="mt-20 mb-20 md:mb-0 lg:mb-0"
+                classProp="mt-6 mb-24 md:mt-20 lg:mt-20 md:mb-0 lg:mb-0"
                 onClick={() => scrollToElement('partner')}
               />
             </div>
@@ -148,7 +148,7 @@ const Home = () => {
               , Temos
             </p>
             <p
-              className={`${Style.success_color} text-2xl md:text-5xl font-semibold mb-1`}
+              className={`${Style.success_color} text-2xl md:text-4xl font-semibold mb-1`}
             >
               Saúde com especialistas
             </p>
@@ -734,7 +734,7 @@ const Home = () => {
           </div>
           <Image
             src={RoundedImage}
-            width={screenSize < 767 ? 320 : 520}
+            width={screenSize < 767 ? 280 : 460}
             alt="Check - icon"
             className="mr-1 md:mr-2"
           />
