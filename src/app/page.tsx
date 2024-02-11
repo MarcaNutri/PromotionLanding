@@ -53,7 +53,13 @@ const Home = () => {
   const openWhatsApp = (name: string) => {
 
     const message = encodeURIComponent(`Olá, obtive seu contato através do site MarcaNutri e gostaria de marcar uma consulta com a ${name}.`);
-    const whatsappUrl = `https://wa.me/${'5553999254275'}?text=${message}`;
+    let whatsappUrl;
+    if(name == "agendar") {
+      whatsappUrl = `https://wa.me/${'5553999254275'}?text=Olá, obtive seu contato através do site MarcaNutri e gostaria de marcar uma consulta!`;
+    } else {
+      whatsappUrl = `https://wa.me/${'5553999254275'}?text=${message}`;
+    }
+
     window.open(whatsappUrl);
   };
 
@@ -114,7 +120,7 @@ const Home = () => {
                   <div className={`${Style.tips_icon}`}>
                     <Image src={stethoscope} width={33} alt="Logo" />
                   </div>
-                  <h4 className={`${Style.tips_title}`}>Agendamento Rápido</h4>
+                  <h4 className={`${Style.tips_title}`}>Melhoria da Saúde</h4>
                   <div className={`${Style.tips_line}`} />
                   <p>
                     Transforme seu bem-estar com orientação nutricional
@@ -170,19 +176,19 @@ const Home = () => {
             <div className={`${Style.container_specialty}`}>
               <Image
                 src={LogoRounded}
+                width={screenSize < 767 ? 36 : 92}
                 alt="logo"
                 className={`${Style.container_specialty_logo}`}
               />
               <p
                 className={`${Style.paragraph} font-bold text-base md:text-2xl lg:text-2xl`}
               >
-                Educação alimentar
+                Nutrição funcional
               </p>
               <p
                 className={`${Style.paragraph} font-normal text-sm md:font-medium`}
               >
-                Transforme sua vida com escolhas saudáveis, descubra o poder do
-                conhecimento nutricional!
+                Transforme sua saúde através de uma abordagem holística e personalizada para a alimentação.
               </p>
             </div>
             <div
@@ -190,24 +196,25 @@ const Home = () => {
             >
               <Image
                 src={LogoRoundedGreen}
+                width={screenSize < 767 ? 36 : 92}
                 alt="logo"
                 className={`${Style.container_specialty_logo}`}
               />
               <p
                 className={`${Style.paragraph} font-bold text-base md:text-2xl lg:text-2xl`}
               >
-                Educação nutricional
+                Nutrição esportiva
               </p>
               <p
                 className={`${Style.paragraph} font-normal text-sm md:font-medium`}
               >
-                Desperte seu potencial de bem-estar através do conhecimento
-                alimentar.
+                Potencialize seu desempenho e recuperação com estratégias alimentares especializadas.
               </p>
             </div>
             <div className={`${Style.container_specialty}`}>
               <Image
                 src={LogoRounded}
+                width={screenSize < 767 ? 36 : 92}
                 alt="logo"
                 className={`${Style.container_specialty_logo}`}
               />
@@ -228,6 +235,7 @@ const Home = () => {
             >
               <Image
                 src={LogoRoundedGreen}
+                width={screenSize < 767 ? 36 : 92}
                 alt="logo"
                 className={`${Style.container_specialty_logo}`}
               />
@@ -258,7 +266,7 @@ const Home = () => {
                   src={logoWhite}
                   width={screenSize < 767 ? 83 : 262}
                   alt="MarcaNutri"
-                  className="ml-3 mr-3 mb-2"
+                  className={screenSize < 767 ? "ml-2 mr-2 mb-0.5" : "ml-3 mr-3 mb-2"}
                 />{' '}
                 Pelotas
               </h3>
@@ -729,7 +737,7 @@ const Home = () => {
               text="Agendar Agora"
               size="large"
               styleButton="rounded"
-              onClick={() => scrollToElement('partner')}
+              onClick={() => openWhatsApp('agendar')}
             />
           </div>
           <Image
