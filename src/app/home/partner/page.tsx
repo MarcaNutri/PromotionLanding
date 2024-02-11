@@ -126,7 +126,7 @@ const Partner = () => {
           />
 
           <div className="lg:ml-16">
-            <h3 className={`${Style.paragraph} ${Style.primary_color} text-2xl lg:text-5xl mb-4 md:mb-8`}>Benefícios de se Tornar um Nutricionista Parceiro:</h3>
+            <h3 className={`${Style.paragraph} ${Style.primary_color} text-2xl lg:text-4xl mb-4 md:mb-8`}>Benefícios de se Tornar um Nutricionista Parceiro:</h3>
             <p className={`${Style.paragraph} ${Style.secundary_color} text-base font-semibold md:font-medium md:text-2xl`}>
             Aqui você terá acesso a uma base de clientes diversificada, facilidade de agendamento, pagamentos simplificados e promoção profissional.
             </p>
@@ -235,11 +235,11 @@ const Partner = () => {
             <div className="flex items-center justify-center gap-3 flex-col flex-wrap md:flex-row lg:flex-row md:flex-nowrap lg:flex-nowrap">
               <p className={`flex max-w-[32rem] font-light lg:text-xl ${Style.secundary_color}`}>
                 <Image src={CheckGreen} width={33} alt="check icon" className="mr-2"/>
-                Receba alertas instantâneos sobre novas solicitações de consulta, alterações no agendamento ou cancelamentos.
+                Mantenha um histórico detalhado de todas as consultas passadas e futuras.
               </p>
               <p className={`flex max-w-[32rem] font-light lg:text-xl ${Style.secundary_color}`}>
                 <Image src={CheckGreen} width={33} alt="check icon" className="mr-2"/>
-                Receba alertas instantâneos sobre novas solicitações de consulta, alterações no agendamento ou cancelamentos.
+                Pesquise facilmente consultas antigas com filtros por paciente, tipo de consulta ou data.
               </p>
             </div>
 
@@ -276,8 +276,14 @@ const Partner = () => {
           />
         </section>
 
+        <Image
+          src={Line}
+          alt="line - icon"
+          className="w-full"
+        />
+
         {/* PAYMENT */}
-        <section className={`${Style.container_partiner} text-white flex items-center flex-wrap justify-center
+        {/* <section className={`${Style.container_partiner} text-white flex items-center flex-wrap justify-center
           m-auto mt-20 flex-col lg:flex-row gap-6
           md:mt-20 lg:mt-20 p-2 md:p-6 lg:p-8`}
         >
@@ -334,7 +340,7 @@ const Partner = () => {
             </div>
 
           </div>
-        </section>
+        </section> */}
 
         {/* infos section */}
         <section
