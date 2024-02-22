@@ -44,6 +44,14 @@ const Home = () => {
     // Adicionar um ouvinte de redimensionamento
     window.addEventListener('resize', updateScreenSize);
 
+    // window.addEventListener("click", function(event) {
+    //   var modal:any = document.getElementById("modal");
+
+    //   if (event.target !== modal) {
+    //     modal.style.display = "none";
+    //   }
+    // })
+
     // Remover o ouvinte de redimensionamento quando o componente é desmontado
     return () => {
       window.removeEventListener('resize', updateScreenSize);
@@ -73,6 +81,18 @@ const Home = () => {
 
   return (
     <>
+      {/* <div id='modal' className={`${Style.modal} d-none`}>
+        <p className={`${Style.paragraph} ${Style.primary_color} text-right cursor-pointer mb-6`}>X</p>
+
+        <iframe
+          width={600}
+          height={450}
+          style={{ border: '0' }}
+          loading="lazy"
+          allowFullScreen
+          src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDOEP9bTWhBW6E_1guCgPXNdGCAxJt071E&map_id=SEU_ID_DE_MAPA&q=Adolfo+Camargo+281,Pelotas,Rio+Grande+do+Sul"
+        />
+      </div> */}
       <div>
         {/* Header */}
         <header className={`${Style.container_header}`}>

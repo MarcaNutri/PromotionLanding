@@ -5,6 +5,7 @@ import '@/styles/globals.css';
 import '@/styles/variables.module.scss';
 import Hotjar from '@hotjar/browser';
 import Script from 'next/script';
+import NavigationProvider from '../contexts/navegationContext'
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -39,7 +40,9 @@ export default function RootLayout({
         <link href="https://fonts.googleapis.com/css2?family=Jomhuria&family=Nunito+Sans:opsz,wght@6..12,300;6..12,400;6..12,600;6..12,700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"/>
       </head>
       <body className={inter.className}>
+        <NavigationProvider>
         {children}
+        </NavigationProvider>
 
         {/* Usando Script do Next.js com dangerouslySetInnerHTML */}
         <Script
