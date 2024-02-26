@@ -35,6 +35,10 @@ import RoundedImage from '@public/assets/Home/roundedImages.png';
 
 const Home = () => {
   const [screenSize, setScreenSize] = useState<any>();
+  const [showNataliaContent, setShowNataliaContent] = useState<Boolean>(false)
+  const [showBrunaContent, setShowBrunaContent] = useState<Boolean>(false)
+  const [showRafaelaContent, setShowRafaelaContent] = useState<Boolean>(false)
+  const [showMiriamContent, setShowMiriamContent] = useState<Boolean>(false)
 
   const updateScreenSize = () => {
     setScreenSize(window.innerWidth);
@@ -303,10 +307,15 @@ const Home = () => {
                       <span className="text-sm">- CRN: 11347P</span>
                     </p>
                     <p
-                      className={`text-xs md:text-base ${Style.text_container} mt-2 mb-2`}
+                      onClick={() => {setShowNataliaContent(!showNataliaContent)}}
+                      className={`text-xs md:text-base ${Style.text_container} mt-2 mb-2 cursor-pointer`}
                     >
-                      Sou Nutricionista formada pela UFPEL. Atualmente trabalho
-                      com a nutrição clínica e esportiva...
+                      {
+                        !showNataliaContent ?
+                        "Sou Nutricionista formada pela UFPEL. Atualmente trabalh com a nutrição clínica e esportiva..." :
+                        "Sou Nutricionista formada pela Universidade Federal de Pelotas (UFPEL). Atualmente trabalho com a nutrição clínica e esportiva num intuíto de proporcionar saúde através de uma alimentação adequada e simples!"
+                      }
+
                     </p>
                     <p
                       className={`text-xs md:text-base font-semibold hidden md:block ${Style.text_container} flex cursor-pointer`}
@@ -430,10 +439,15 @@ const Home = () => {
                       <span className="text-sm">- CRN: 17216</span>
                     </p>
                     <p
-                      className={`text-xs md:text-base ${Style.text_container} mt-2 mb-2`}
+                      onClick={() => setShowBrunaContent(!showBrunaContent)}
+                      className={`text-xs md:text-base ${Style.text_container} mt-2 mb-2 cursor-pointer`}
                     >
-                      Nutricionista desde 2019, já acompanhei centenas de
-                      pessoas durante esse tempo...
+                      {
+                        !showBrunaContent ?
+                        "Nutricionista desde 2019, já acompanhei centenas de pessoas durante esse tempo..." :
+                        "Nutricionista desde 2019, já acompanhei centenas de pessoas ao longo desse tempo. Meu formato de trabalho é inegociável: proporcionar resultados e autonomia alimentar sem abrir mão dos princípios básicos de saúde e sem corromper minha principal responsabilidade como profissional nutricionista que é resgatar a saúde e aumentar o tempo e qualidade de vida."
+                      }
+
                     </p>
                     <p
                       className={`text-xs md:text-base font-semibold hidden md:block ${Style.text_container} flex cursor-pointer`}
@@ -577,10 +591,14 @@ const Home = () => {
                     Rafaela Ratto <span className="text-sm">- CRN: 10554P</span>
                   </p>
                   <p
-                    className={`text-xs md:text-base ${Style.text_container} mt-2 mb-2`}
+                    onClick={() => {setShowRafaelaContent(!showRafaelaContent)}}
+                    className={`text-xs md:text-base ${Style.text_container} mt-2 mb-2 cursor-pointer`}
                   >
-                    Nutricionista clínica com atuação na área esportiva e
-                    comportamental. 2 anos de atuação no mercado...
+                    {
+                      !showRafaelaContent ?
+                      "Nutricionista clínica com atuação na área esportiva e comportamental. 2 anos de atuação no mercado..." :
+                      "Nutricionista clínica com atuação na área esportiva e comportamental. 2 anos de atuação no mercado, dentro desses dois anos trabalhando ativamente com emagrecimento e mudança de hábitos para mulheres."
+                    }
                   </p>
                   <p
                     className={`text-xs md:text-base font-semibold hidden md:block ${Style.text_container} flex cursor-pointer`}
@@ -717,10 +735,16 @@ const Home = () => {
                     Mírian Lost <span className="text-sm">- CRN: 12.620D</span>
                   </p>
                   <p
-                    className={`text-xs md:text-base ${Style.text_container} mt-2 mb-2`}
+                    onClick={() => setShowMiriamContent(!showMiriamContent)}
+                    className={`text-xs md:text-base ${Style.text_container} mt-2 mb-2 cursor-pointer`}
                   >
-                    Trabalhei com nutrição clínica,
-                    principalmente com pacientes com Síndrome Metabólica ...
+                    {
+                      !showMiriamContent ?
+                      "Trabalhei com nutrição clínica, principalmente com pacientes com Síndrome Metabólica..."
+                      :
+                      "Trabalhei com nutrição clínica, principalmente com pacientes com Síndrome Metabólica (dislipidemia, hipertensão, diabetes tipo 2 e obesidade) De alguns anos prá cá me dedico às questões da saúde da mulher, envelhecimento e saúde digestiva e intestinal, sempre com a nutrição integrativa como base."
+                    }
+
                   </p>
                   <p
                     className={`text-xs md:text-base font-semibold hidden md:block ${Style.text_container} flex cursor-pointer`}
