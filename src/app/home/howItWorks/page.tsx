@@ -95,23 +95,19 @@ const Partner = () => {
           contents={[
             {
               title:'O que é a MarcaNutri?',
-              content:'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
-            },
-            {
-              title:'Como posso me cadastrar no MarcaNutri?',
-              content:'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+              content:'MarcaNutri é uma plataforma conveniente e confiável que oferece acesso a uma variedade de nutricionistas qualificados. Com a MarcaNutri, os pacientes podem facilmente encontrar e agendar consultas com nutricionistas próximos à sua localização, além de acessar informações úteis sobre nutrição e saúde. Nossa plataforma proporciona praticidade ao permitir que os pacientes marquem consultas de forma rápida e fácil, garantindo assim um cuidado eficaz e personalizado para suas necessidades nutricionais.'
             },
             {
               title:'A plataforma é segura?',
-              content:'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+              content:'A segurança da plataforma é uma prioridade absoluta. Utilizamos medidas de segurança robustas para proteger todas as informações dos pacientes, garantindo total confidencialidade e privacidade. '
             },
             {
               title:'Como serei notificado das minhas consultas?',
-              content:'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+              content:'Após agendar uma consulta em nossa plataforma, você receberá uma confirmação por e-mail. Além disso, quando a consulta estiver próxima, enviaremos um aviso através do WhatsApp para garantir que você esteja totalmente informado e preparado para a sua consulta.'
             },
             {
               title:'Como é realizado o processo de pagamento?',
-              content:'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+              content:'O processo de pagamento é flexível e pode ser realizado de duas maneiras diferentes. Primeiramente, a pessoa pode optar por efetuar o pagamento diretamente para nós, utilizando métodos como Pix ou transferência bancária. Alternativamente, também oferecemos a opção para que o pagamento seja feito diretamente para o nutricionista no momento da consulta, aceitando cartão de crédito ou pagamento em dinheiro, conforme a preferência do paciente e a disponibilidade do profissional.'
             }
           ]}
         />

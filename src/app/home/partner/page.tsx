@@ -366,23 +366,23 @@ const Partner = () => {
           contents={[
             {
               title:'A plataforma é segura?',
-              content:'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+              content:'Sim, a segurança da nossa plataforma é uma prioridade absoluta. Todos os seus dados são tratados com total confidencialidade. Além disso, nossa plataforma segue todas as regulamentações e normas necessárias para garantir a segurança e qualidade do serviço prestado na área de nutrição.'
             },
             {
               title:'Recebo lembretes das consultas agendadas?',
-              content:'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+              content:'Sim, você receberá lembretes das consultas agendadas em nossa plataforma. Nós entendemos a importância de manter os clientes informados e facilitar o acompanhamento de suas consultas.'
             },
             {
               title:'Serei avaliado por meus pacientes?',
-              content:'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+              content:'Em nossa plataforma, oferecemos a oportunidade para que os pacientes avaliem a experiência com os nutricionistas após as consultas. Valorizamos muito o feedback dos pacientes, pois nos ajuda a garantir a qualidade do serviço prestado. As avaliações dos pacientes nos permitem entender melhor suas necessidades e experiências, além de nos ajudar a melhorar continuamente nossos serviços.'
             },
             {
               title:'O que são as taxas sobre agendamento?',
-              content:'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+              content:'As taxas sobre agendamento referem-se a um custo de 20% sobre o valor da consulta realizada através da nossa plataforma. Essa taxa é aplicada para cobrir os custos operacionais da plataforma e garantir a qualidade contínua dos serviços oferecidos.'
             },
             {
               title:'Como eu recebo o valor da consulta?',
-              content:'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+              content:'Após a consulta ser realizada, o valor correspondente será processado e depositado em sua conta dentro de um prazo de até duas semanas. Nosso sistema efetua os pagamentos de forma periódica, garantindo que você receba os valores pelos serviços prestados dentro desse período estabelecido.'
             }
           ]}
         />
