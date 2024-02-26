@@ -70,6 +70,7 @@ const Partner = () => {
                 text="Quero atender na marca nutri"
                 size="large"
                 styleButton="rounded"
+                onClick={() => window.open("https://docs.google.com/forms/d/e/1FAIpQLSe2_UTuauE9PwgI6Z6nLkNj_25l9ANCz2HPR1s-FflwCZ-fXw/viewform", '_blank')}
               />
             </div>
           </div>
