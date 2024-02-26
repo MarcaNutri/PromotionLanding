@@ -21,6 +21,7 @@ import marcanutri from '@public/assets/marcanutri.svg';
 import Nutricionista1 from '@public/assets/Home/rafaela.png';
 import Nutricionista2 from '@public/assets/Home/natalia.png';
 import Nutricionista3 from '@public/assets/Home/Bruna.png';
+import Nutricionista4 from '@public/assets/Home/miriam.png';
 import Check from '@public/assets/Home/CheckWhite.svg';
 import CheckGreen from '@public/assets/Home/checkgreen.svg';
 import logoWhite from '@public/assets/marcaNutriWhite.svg';
@@ -81,18 +82,7 @@ const Home = () => {
 
   return (
     <>
-      {/* <div id='modal' className={`${Style.modal} d-none`}>
-        <p className={`${Style.paragraph} ${Style.primary_color} text-right cursor-pointer mb-6`}>X</p>
 
-        <iframe
-          width={600}
-          height={450}
-          style={{ border: '0' }}
-          loading="lazy"
-          allowFullScreen
-          src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDOEP9bTWhBW6E_1guCgPXNdGCAxJt071E&map_id=SEU_ID_DE_MAPA&q=Adolfo+Camargo+281,Pelotas,Rio+Grande+do+Sul"
-        />
-      </div> */}
       <div>
         {/* Header */}
         <header className={`${Style.container_header}`}>
@@ -303,7 +293,7 @@ const Home = () => {
                       alt="nutricionista"
                     />
                       <p className={`text-sm lg:text-xl font-semibold block mt-2`}>
-                      R$ 120,00
+                      R$ 150,00
                     </p>
                   </div>
 
@@ -704,6 +694,146 @@ const Home = () => {
                       className="mr-1 md:mr-2"
                     />
                     Nutrição Funcional
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <div className={`flex mb-8 md:mb-16`}>
+                <div style={{ minWidth: '83px' }}>
+                  <Image
+                    src={Nutricionista4}
+                    width={screenSize < 767 ? 83 : 198}
+                    alt="nutricionista"
+                  />
+                  <p className={`text-sm lg:text-xl font-semibold block mt-2`}>
+                    R$ 250,00
+                  </p>
+                </div>
+
+                <div className="mr-3 ml-3">
+                  <p className={` text-base md:text-2xl font-semibold`}>
+                    Mírian Lost <span className="text-sm">- CRN: 12.620D</span>
+                  </p>
+                  <p
+                    className={`text-xs md:text-base ${Style.text_container} mt-2 mb-2`}
+                  >
+                    Trabalhei com nutrição clínica,
+                    principalmente com pacientes com Síndrome Metabólica ...
+                  </p>
+                  <p
+                    className={`text-xs md:text-base font-semibold hidden md:block ${Style.text_container} flex cursor-pointer`}
+                    style={{ display: 'flex' }}
+                  >
+                    <Image
+                      src={LocationWhite}
+                      width={screenSize < 767 ? 14.8 : 25}
+                      alt="icone de localização"
+                      className="mr-1"
+                    />{' '}
+                    Endereço: Rua General Teles 671/302. - Pelotas
+                  </p>
+
+                  <button
+                      className={`hidden md:flex ${Style.whats_button} mt-2 hover:brightness-90 ease-in-out duration-200 mt-9`}
+                      onClick={() => openWhatsApp('Mírian Lost')}
+                    >
+                      <Image
+                        src={WhatsApp}
+                        width={30}
+                        alt="email"
+                        className="mr-3"
+                      />{' '}
+                      Agendar consulta
+                  </button>
+
+                  <div className="block md:hidden">
+                    <div className="flex flex-col justify-center">
+                      <p
+                        className={`text-xs md:text-base font-semibold mb-2 mt-1`}
+                      >
+                        Especialidades
+                      </p>
+                      <p
+                        className={`flex items-center text-xs md:text-base mb-1`}
+                      >
+                        <Image
+                          src={Check}
+                          width={screenSize < 767 ? 10.8 : 20}
+                          alt="Check - icon"
+                          className="mr-1 md:mr-2"
+                        />
+                        Nutrição clínica funcional
+                      </p>
+                      <p
+                        className={`flex items-center text-xs md:text-base mb-1`}
+                      >
+                        <Image
+                          src={Check}
+                          width={screenSize < 767 ? 10.8 : 20}
+                          alt="Check - icon"
+                          className="mr-1 md:mr-2"
+                        />
+                        Saúde da mulher
+                      </p>
+                      <p
+                        className={`flex items-center text-xs md:text-base mb-1`}
+                      >
+                        <Image
+                          src={Check}
+                          width={screenSize < 767 ? 10.8 : 20}
+                          alt="Check - icon"
+                          className="mr-1 md:mr-2"
+                        />
+                        Saúde Digestiva e Intestinal.
+                      </p>
+                    </div>
+                  </div>
+                  <button
+                      className={`flex md:hidden lg:hidden ${Style.whats_button} mt-2 hover:brightness-90 ease-in-out duration-200 mt-9`}
+                      onClick={() => openWhatsApp('Mírian Lost')}
+                    >
+                      <Image
+                        src={WhatsApp}
+                        width={screenSize < 767 ? 20 : 30}
+                        alt="email"
+                        className="mr-3"
+                      />{' '}
+                      Agendar consulta
+                  </button>
+                </div>
+
+                <div className="hidden md:block">
+                  <p className={`text-xs md:text-base font-semibold mb-2`}>
+                    Especialidades
+                  </p>
+                  <p className={`flex items-center text-xs md:text-base mb-2`}>
+                    <Image
+                      src={Check}
+                      width={screenSize < 767 ? 10.8 : 20}
+                      alt="Check - icon"
+                      className="mr-1 md:mr-2"
+                    />
+                    Nutrição clínica funcional
+                  </p>
+                  <p className={`flex items-center text-xs md:text-base mb-2`}>
+                    <Image
+                      src={Check}
+                      width={screenSize < 767 ? 10.8 : 20}
+                      alt="Check - icon"
+                      className="mr-1 md:mr-2"
+                    />
+                    Saúde da mulher
+                  </p>
+                  <p className={`flex items-center text-xs md:text-base mb-2`}>
+                    <Image
+                      src={Check}
+                      width={screenSize < 767 ? 10.8 : 20}
+                      alt="Check - icon"
+                      className="mr-1 md:mr-2"
+                    />
+                    Saúde Digestiva e Intestinal.
                   </p>
                 </div>
               </div>
