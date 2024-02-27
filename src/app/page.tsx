@@ -64,17 +64,17 @@ const Home = () => {
   }, []);
 
   const openWhatsApp = (name: string) => {
+    let message;
 
-    const message = encodeURIComponent(`Olá, obtive seu contato através do site MarcaNutri e gostaria de marcar uma consulta com a ${name}.`);
-    let whatsappUrl;
-    if(name == "agendar") {
-      whatsappUrl = `https://wa.me/${'5553999254275'}?text=Olá, obtive seu contato através do site MarcaNutri e gostaria de marcar uma consulta!`;
+    if (name == "agendar") {
+      message = "Oii MarcaNutri, gostaria de agendar uma consulta com um nutricionista, você poderia me ajudar?";
     } else {
-      whatsappUrl = `https://wa.me/${'5553999254275'}?text=${message}`;
+      message = "Olá MarcaNutri! Estou super animada(o) para marcar uma consulta com a(o) " + name + ". Podem me ajudar com isso? Mal posso esperar para começar essa jornada rumo a uma alimentação mais saudável!";
     }
 
+    const whatsappUrl = `https://wa.me/${'5553999925570'}?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl);
-  };
+};
 
   const scrollToElement = (elementId:string) => {
     const element = document.getElementById(elementId);

@@ -43,7 +43,7 @@ const Footer = () => {
                 </p>
                 <button
                   className={`flex ${styles.whats_button} mt-2 hover:brightness-90 ease-in-out duration-200`}
-                  onClick={() => { window.open(`https://wa.me/5399254275?text=${'Olá, vim através do MarcaNutri e preciso de auxílio!'}`)}}
+                  onClick={() => { window.open(`https://wa.me/53999925570?text=${'Olá, MarcaNutri estou com algumas dúvidas, você poderia me ajudar?'}`)}}
                 >
                   <Image
                     src={WhatsApp}
