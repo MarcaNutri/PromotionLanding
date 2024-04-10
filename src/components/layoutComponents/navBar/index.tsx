@@ -23,9 +23,9 @@ const NavBar: React.FC<NavProps> = () => {
   return (
     <>
       <div
-        className={`flex justify-center lg:justify-center items-center p-6 m-auto`}
+        className={`flex justify-between lg:justify-center items-center p-6 m-auto`}
       >
-        <Image src={Logo} width={223} alt="Logo" className="mr-20 mb-3" />
+        <Image src={Logo} width={223} alt="Logo" className="mr-10 mb-3" />
         <div className={`hidden lg:flex items-center`}>
           <p
             className={`${Style.navbar_item} ${activePage == 'home' && Style.navbar_item_active} mr-4 hover:brightness-75 ease-in-out duration-200`}
@@ -75,8 +75,8 @@ const NavBar: React.FC<NavProps> = () => {
       <div
         className={`${showMenu ? `${Style.nav_menu}` : 'hidden'} w-full justify-center align-items flex-wrap lg:hidden transition-opacity ease-in-out duration-300`}
       >
-        <div className="flex justify-center  items-center p-6">
-          <Image src={Logo} width={223} alt="Logo" className="mr-20 mb-3" />
+        <div className="flex justify-between  items-center p-6">
+          <Image src={Logo} width={223} alt="Logo" className="mr-10 mb-3" />
           <Image
             src={Menu}
             width={24}

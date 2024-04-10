@@ -459,8 +459,7 @@ const Home = () => {
                         alt="icone de localização"
                         className="mr-1"
                       />{' '}
-                      Endereço: Rua Major de Góes Monteiro Cícero, 164 - sala
-                      302
+                      Endereço: Avenida Juscelino Kubitscheck de Oliveira, 4410 - Click Coworking - sala B
                     </p>
                     <button
                       className={`hidden md:flex ${Style.whats_button} mt-2 hover:brightness-90 ease-in-out duration-200 mt-9`}
@@ -491,7 +490,7 @@ const Home = () => {
                             alt="Check - icon"
                             className="mr-1 md:mr-2"
                           />
-                          Esporte e exercício físico
+                         Emagrecimento
                         </p>
                         <p
                           className={`flex items-center text-xs md:text-base mb-1`}
@@ -502,7 +501,7 @@ const Home = () => {
                             alt="Check - icon"
                             className="mr-1 md:mr-2"
                           />
-                          Vegetarianismo e veganismo
+                          Nutrição esportiva
                         </p>
                         <p
                           className={`flex items-center text-xs md:text-base mb-1`}
@@ -513,7 +512,18 @@ const Home = () => {
                             alt="Check - icon"
                             className="mr-1 md:mr-2"
                           />
-                          Nutrição Funcional
+                          Controle e tratamento de patologias
+                        </p>
+                        <p
+                          className={`flex items-center text-xs md:text-base mb-1`}
+                        >
+                          <Image
+                            src={Check}
+                            width={screenSize < 767 ? 10.8 : 20}
+                            alt="Check - icon"
+                            className="mr-1 md:mr-2"
+                          />
+                          Reeducação alimentar
                         </p>
                       </div>
                     </div>
@@ -544,7 +554,7 @@ const Home = () => {
                         alt="Check - icon"
                         className="mr-1 md:mr-2"
                       />
-                      Esporte e exercício físico
+                      Emagrecimento
                     </p>
                     <p
                       className={`flex items-center text-xs md:text-base mb-2`}
@@ -555,7 +565,7 @@ const Home = () => {
                         alt="Check - icon"
                         className="mr-1 md:mr-2"
                       />
-                      Vegetarianismo e veganismo
+                      Nutrição esportiva
                     </p>
                     <p
                       className={`flex items-center text-xs md:text-base mb-2`}
@@ -566,7 +576,18 @@ const Home = () => {
                         alt="Check - icon"
                         className="mr-1 md:mr-2"
                       />
-                      Nutrição Funcional
+                     Controle e tratamento de patologias
+                    </p>
+                    <p
+                      className={`flex items-center text-xs md:text-base mb-2`}
+                    >
+                      <Image
+                        src={Check}
+                        width={screenSize < 767 ? 10.8 : 20}
+                        alt="Check - icon"
+                        className="mr-1 md:mr-2"
+                      />
+                     Reeducação alimentar
                     </p>
                   </div>
                 </div>
@@ -610,7 +631,7 @@ const Home = () => {
                       alt="icone de localização"
                       className="mr-1"
                     />{' '}
-                    Endereço: Rua Major de Góes Monteiro Cícero, 164 - sala 302
+                    Endereço: Avenida Juscelino Kubitscheck de Oliveira, 4410 - Click Coworking - sala B
                   </p>
 
                   <button
@@ -732,7 +753,7 @@ const Home = () => {
 
                 <div className="mr-3 ml-3">
                   <p className={` text-base md:text-2xl font-semibold`}>
-                    Mírian Lost <span className="text-sm">- CRN: 12.620D</span>
+                    Mírian Iost <span className="text-sm">- CRN: 12.620D</span>
                   </p>
                   <p
                     onClick={() => setShowMiriamContent(!showMiriamContent)}
