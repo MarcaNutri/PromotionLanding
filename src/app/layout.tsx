@@ -31,6 +31,13 @@ export default function RootLayout({
     })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
   `;
 
+  const analyticsScript = `
+  window.dataLayer = window.dataLayer || []
+  function gtag(){dataLayer.push(arguments)}
+  gtag('js', new Date())
+  gtag('config', 'G-TDJSD87QN1')
+  `
+
   return (
     <html lang="pt-br">
       <head>
@@ -53,6 +60,12 @@ export default function RootLayout({
           }}
         />
 
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-TDJSD87QN1"></script>
+        <Script
+          dangerouslySetInnerHTML={{
+            __html: analyticsScript,
+          }}
+        />
       </body>
     </html>
   );
