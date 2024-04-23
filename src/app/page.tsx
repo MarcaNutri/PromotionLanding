@@ -296,9 +296,9 @@ const Home = () => {
                       width={screenSize < 767 ? 83 : 198}
                       alt="nutricionista"
                     />
-                      <p className={`text-sm lg:text-xl font-semibold block mt-2`}>
+                      {/* <p className={`text-sm lg:text-xl font-semibold block mt-2`}>
                       R$ 150,00
-                    </p>
+                    </p> */}
                   </div>
 
                   <div className="mr-3 ml-3">
@@ -312,7 +312,7 @@ const Home = () => {
                     >
                       {
                         !showNataliaContent ?
-                        "Sou Nutricionista formada pela UFPEL. Atualmente trabalh com a nutrição clínica e esportiva..." :
+                        "Sou Nutricionista formada pela UFPEL. Atualmente trabalh com a nutrição clínica e esportiva... Ver Mais." :
                         "Sou Nutricionista formada pela Universidade Federal de Pelotas (UFPEL). Atualmente trabalho com a nutrição clínica e esportiva num intuíto de proporcionar saúde através de uma alimentação adequada e simples!"
                       }
 
@@ -428,9 +428,9 @@ const Home = () => {
                       width={screenSize < 767 ? 83 : 198}
                       alt="nutricionista"
                     />
-                    <p className={`text-sm lg:text-xl font-semibold block mt-2`}>
+                    {/* <p className={`text-sm lg:text-xl font-semibold block mt-2`}>
                       R$ 190,00
-                    </p>
+                    </p> */}
                   </div>
 
                   <div className="mr-3 ml-3">
@@ -444,7 +444,7 @@ const Home = () => {
                     >
                       {
                         !showBrunaContent ?
-                        "Nutricionista desde 2019, já acompanhei centenas de pessoas durante esse tempo..." :
+                        "Nutricionista desde 2019, já acompanhei centenas de pessoas durante esse tempo... Ver Mais." :
                         "Nutricionista desde 2019, já acompanhei centenas de pessoas ao longo desse tempo. Meu formato de trabalho é inegociável: proporcionar resultados e autonomia alimentar sem abrir mão dos princípios básicos de saúde e sem corromper minha principal responsabilidade como profissional nutricionista que é resgatar a saúde e aumentar o tempo e qualidade de vida."
                       }
 
@@ -602,9 +602,9 @@ const Home = () => {
                     width={screenSize < 767 ? 83 : 198}
                     alt="nutricionista"
                   />
-                  <p className={`text-sm lg:text-xl font-semibold block mt-2`}>
+                  {/* <p className={`text-sm lg:text-xl font-semibold block mt-2`}>
                     R$ 190,00
-                  </p>
+                  </p> */}
                 </div>
 
                 <div className="mr-3 ml-3">
@@ -617,7 +617,7 @@ const Home = () => {
                   >
                     {
                       !showRafaelaContent ?
-                      "Nutricionista clínica com atuação na área esportiva e comportamental. 2 anos de atuação no mercado..." :
+                      "Nutricionista clínica com atuação na área esportiva e comportamental. 2 anos de atuação... Ver Mais." :
                       "Nutricionista clínica com atuação na área esportiva e comportamental. 2 anos de atuação no mercado, dentro desses dois anos trabalhando ativamente com emagrecimento e mudança de hábitos para mulheres."
                     }
                   </p>
@@ -746,9 +746,9 @@ const Home = () => {
                     width={screenSize < 767 ? 83 : 198}
                     alt="nutricionista"
                   />
-                  <p className={`text-sm lg:text-xl font-semibold block mt-2`}>
+                  {/* <p className={`text-sm lg:text-xl font-semibold block mt-2`}>
                     R$ 250,00
-                  </p>
+                  </p> */}
                 </div>
 
                 <div className="mr-3 ml-3">
@@ -761,7 +761,7 @@ const Home = () => {
                   >
                     {
                       !showMiriamContent ?
-                      "Trabalhei com nutrição clínica, principalmente com pacientes com Síndrome Metabólica..."
+                      "Trabalhei com nutrição clínica, principalmente com pacientes com Síndrome Metabólica... Ver Mais."
                       :
                       "Trabalhei com nutrição clínica, principalmente com pacientes com Síndrome Metabólica (dislipidemia, hipertensão, diabetes tipo 2 e obesidade) De alguns anos prá cá me dedico às questões da saúde da mulher, envelhecimento e saúde digestiva e intestinal, sempre com a nutrição integrativa como base."
                     }
